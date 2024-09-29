@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="428.0" prefWidth="1501.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="performance.monitoring.tracker.FXMLDocumentController"> <!-- Horizontal box to hold progress bars -->
+     
+        <AnchorPane fx:id="headerPanel" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="1501.0" style="-fx-background-color: DodgerBlue;">
+         <Label fx:id="headerLabel" layoutX="591.0" layoutY="9.0" prefHeight="43.0" prefWidth="318.0" style="-fx-font-family: 'Times New Roman'; -fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: white;" text="Performance Monitoring Tracker">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Label>
+     </AnchorPane>
+    <HBox layoutX="127.0" layoutY="150.0" prefHeight="208.0" prefWidth="920.0" spacing="20">
+
+        
+        <!-- First Circular Progress Bar -->
+        <AnchorPane prefHeight="208.0" prefWidth="201.0">
+            <Circle fx:id="outerCircle1" centerX="100" centerY="100" fill="TRANSPARENT" layoutX="1.0" layoutY="1.0" radius="90.0" stroke="LightGray" strokeWidth="20" />
+            <Arc fx:id="progressArc1" centerX="100" centerY="100" fill="TRANSPARENT" length="0" radiusX="90.0" radiusY="90.0" startAngle="270" stroke="#FF8000" strokeLineCap="ROUND" strokeWidth="20" type="OPEN" />
+            <Label fx:id="topLabel1" layoutX="96.0" layoutY="66.0" style="-fx-font-size: 24px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text="A" />
+            <Label fx:id="mainNumberLabel1" layoutX="75.0" layoutY="91.0" style="-fx-font-size: 30px; -fx-font-family: 'Times New Roman'; -fx-font-weight: bold; -fx-text-fill: black;" text="0" />
+            <Label fx:id="subscriptLabel1" layoutX="101.0" layoutY="111.0" style="-fx-font-size: 20px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text=".00" />
+        </AnchorPane>
+
+        <!-- Second Circular Progress Bar -->
+        <AnchorPane>
+            <Circle fx:id="outerCircle2" centerX="100" centerY="100" fill="TRANSPARENT" radius="90.0" stroke="LightGray" strokeWidth="20" />
+            <Arc fx:id="progressArc2" centerX="100" centerY="100" fill="TRANSPARENT" length="0" radiusX="90.0" radiusY="90.0" startAngle="270" stroke="#FF8000" strokeLineCap="ROUND" strokeWidth="20" type="OPEN" />
+            <Label fx:id="topLabel2" layoutX="95.0" layoutY="66.0" style="-fx-font-size: 24px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text="V" />
+            <Label fx:id="mainNumberLabel2" layoutX="74.0" layoutY="91.0" style="-fx-font-size: 30px; -fx-font-family: 'Times New Roman'; -fx-font-weight: bold; -fx-text-fill: black;" text="0" />
+            <Label fx:id="subscriptLabel2" layoutX="100.0" layoutY="111.0" style="-fx-font-size: 20px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text=".00" />
+        </AnchorPane>
+
+        <!-- Third Circular Progress Bar -->
+        <AnchorPane>
+            <Circle fx:id="outerCircle3" centerX="100" centerY="100" fill="TRANSPARENT" radius="90.0" stroke="LightGray" strokeWidth="20" />
+            <Arc fx:id="progressArc3" centerX="100" centerY="100" fill="TRANSPARENT" length="0" radiusX="90.0" radiusY="90.0" startAngle="270" stroke="#FF8000" strokeLineCap="ROUND" strokeWidth="20" type="OPEN" />
+            <Label fx:id="topLabel3" layoutX="95.0" layoutY="66.0" style="-fx-font-size: 24px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text="°C" />
+            <Label fx:id="mainNumberLabel3" layoutX="74.0" layoutY="91.0" style="-fx-font-size: 30px; -fx-font-family: 'Times New Roman'; -fx-font-weight: bold; -fx-text-fill: black;" text="0" />
+            <Label fx:id="subscriptLabel3" layoutX="100.0" layoutY="111.0" style="-fx-font-size: 20px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text=".00" />
+        </AnchorPane>
+
+        <!-- Fourth Circular Progress Bar -->
+        <AnchorPane>
+            <Circle fx:id="outerCircle4" centerX="100" centerY="100" fill="TRANSPARENT" radius="90.0" stroke="LightGray" strokeWidth="20" />
+            <Arc fx:id="progressArc4" centerX="100" centerY="100" fill="TRANSPARENT" length="0" radiusX="90.0" radiusY="90.0" startAngle="270" stroke="#FF8000" strokeLineCap="ROUND" strokeWidth="20" type="OPEN" />
+            <Label fx:id="topLabel4" layoutX="95.0" layoutY="66.0" style="-fx-font-size: 24px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text="G" />
+            <Label fx:id="mainNumberLabel4" layoutX="74.0" layoutY="91.0" style="-fx-font-size: 30px; -fx-font-family: 'Times New Roman'; -fx-font-weight: bold; -fx-text-fill: black;" text="0" />
+            <Label fx:id="subscriptLabel4" layoutX="100.0" layoutY="111.0" style="-fx-font-size: 20px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text=".00" />
+        </AnchorPane>
+      <AnchorPane>
+         <children>
+            <Circle fx:id="outerCircle5" centerX="100" centerY="100" fill="TRANSPARENT" radius="90.0" stroke="LightGray" strokeWidth="20" />
+            <Arc fx:id="progressArc5" centerX="100" centerY="100" fill="TRANSPARENT" length="0" radiusX="90.0" radiusY="90.0" startAngle="270" stroke="#FF8000" strokeLineCap="ROUND" strokeWidth="20" type="OPEN" />
+            <Label fx:id="topLabel5" layoutX="95.0" layoutY="66.0" style="-fx-font-size: 24px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text="Bar" />
+            <Label fx:id="mainNumberLabel5" layoutX="74.0" layoutY="91.0" style="-fx-font-size: 30px; -fx-font-family: 'Times New Roman'; -fx-font-weight: bold; -fx-text-fill: black;" text="0" />
+            <Label fx:id="subscriptLabel5" layoutX="100.0" layoutY="111.0" style="-fx-font-size: 20px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text=".00" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="208.0" prefWidth="201.0">
+         <children>
+            <Circle fx:id="outerCircle6" centerX="100" centerY="100" fill="TRANSPARENT" layoutX="1.0" layoutY="1.0" radius="90.0" stroke="LightGray" strokeWidth="20" />
+            <Arc fx:id="progressArc6" centerX="100" centerY="100" fill="TRANSPARENT" length="0" radiusX="90.0" radiusY="90.0" startAngle="270" stroke="#FF8000" strokeLineCap="ROUND" strokeWidth="20" type="OPEN" />
+            <Label fx:id="topLabel6" layoutX="96.0" layoutY="66.0" style="-fx-font-size: 24px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text="\%" />
+            <Label fx:id="mainNumberLabel6" layoutX="75.0" layoutY="91.0" style="-fx-font-size: 30px; -fx-font-family: 'Times New Roman'; -fx-font-weight: bold; -fx-text-fill: black;" text="0" />
+            <Label fx:id="subscriptLabel6" layoutX="101.0" layoutY="111.0" style="-fx-font-size: 20px; -fx-font-family: 'Times New Roman'; -fx-text-fill: black;" text=".00" />
+         </children>
+      </AnchorPane>
+    </HBox>
+    <Label layoutX="29.0" layoutY="226.0" prefHeight="28.0" prefWidth="63.0" text="Pump">
+        <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+        </font>
+    </Label>
+    <Label layoutX="598.0" layoutY="110.0" text="Body Temperature">
+        <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+        </font>
+    </Label>
+    <Label layoutX="829.0" layoutY="110.0" text="Pump Vibration">
+        <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+        </font>
+    </Label>
+    <Label layoutX="170.0" layoutY="110.0" text="Phase Current">
+        <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+        </font>
+    </Label>
+    <Label layoutX="385.0" layoutY="110.0" text="Pump Voltage">
+        <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+        </font>
+    </Label>
+   <Label layoutX="1274.0" layoutY="110.0" text="Failure Mode">
+      <font>
+         <Font name="Times New Roman Bold" size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="1037.0" layoutY="110.0" text="Delivery Pressure">
+      <font>
+         <Font name="Times New Roman Bold" size="20.0" />
+      </font>
+   </Label>
+</AnchorPane>
